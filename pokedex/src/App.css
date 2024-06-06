@@ -7,6 +7,11 @@
   'Lucida Sans', Arial, sans-serif;;
 }
 
+@font-face {
+  font-family: "pokemonfont1";
+  src: url("../public/pokemonfont1.ttf") format("opentype");
+}
+
 
 .pokedex {
 text-align: center;
@@ -38,6 +43,7 @@ button{
   background-color: rgb(219, 33, 61);
   font-size: 15px;
   color: rgb(227, 232, 252);
+  font-family: "pokemonfont1";
 }
 
 .footer{
@@ -76,6 +82,7 @@ button{
 
 
 h2{
+  font-family: "pokemonfont1";
   text-transform: capitalize;
   color: rgb(25, 48, 158);
 }
