@@ -15,7 +15,7 @@ const Spinner = styled(motion.div)`
   border-radius: 50%;
 `
 
-function App() {
+export default function App() {
   const [Carregando, setCarregando] = useState(true);
   useEffect(() =>{
     const timer = setTimeout(() => {
@@ -33,16 +33,14 @@ function App() {
       transition={{duration: 0.2, repeat: Infinity, ease: 'linear'}}
       />
       ):(
-        <Conteudo visivel={!Carregando} />
-      )
-    }
+        <div> 
+        <Header/>
+        <Logo/>
+        <Pokedex/>
+        <Footer/>
+        </div>
+      )}
     </div>
-    <Header/>
-    <Logo/>
-    <Pokedex/>
-    <Footer/>
     </>
-  )
-}
-
-export default App
+    
+)}
